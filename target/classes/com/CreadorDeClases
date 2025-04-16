@@ -1,0 +1,28 @@
+Estructura basica de una clase 
+1: Definir propiedades de clase: preferiblemente privadas 
+2: Constructores: metodos que devuelve una instancia de la clase y pueden recibir valores por parametro. 
+  Puede haber tanto Constructores como sean necesarios siempre y cuando no se repita la firma (la cantidad de parametros y sus nombres).
+  *Son formas de crear una instancia de un objeto.
+
+  Firma de coche  -> Coche(String color, String modelo, String matricula, int caballos)
+                  -> Coche(String color, String modelo, String matricula, int caballos, Usuario propietario)
+                  
+  * Es buena practica crear un constructor vacio.
+3: Getters: metodo que retorna(return) el valor de una propiedad de una clase. Se genera uno por cada propiedad de la clase a la que
+    se quiera permitir el acceso.
+
+4: Setters: metodo que permite la modificacion de una propiedad de la clase a traves del paso por parametro de un nuevo valor. No suele 
+retornr nada(Void). Se genera uno por cada propiedad de la clase a la que
+    se quiera permitir el acceso.
+
+5: ToString: Devuelve la informacion de la instacia de la clase 
+
+Gracias por ayudarme. Te amo.
+
+* Clase: Modelo o plantilla que define las propiedades (atributos) y los comportamientos (metodos) que tendran los objetos 
+creados a partir de ella.
+
+*Las clases pueden interactuar entre si. = una clase puede estar formada por otra clase, es decir, una clase puede
+ tener como atributo otra clase.
+
+

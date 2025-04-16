@@ -1,0 +1,202 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #152243;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Sección superior con logo y hora */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.gym-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #59a5ff;
+    text-align: center;
+}
+
+.current-time {
+    font-size: 1.5rem;
+    color: #59a5ff;
+}
+
+/* Timer principal grande */
+.main-timer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-display {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #59a5ff;
+    text-align: center;
+}
+
+/* Botones de control */
+.controls-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 0;
+}
+
+.control-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2e3b59;
+    color: #59a5ff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.control-btn:hover {
+    background-color: #3e4c6e;
+    transform: translateY(-2px);
+}
+
+.control-btn:active {
+    transform: translateY(1px);
+}
+
+.primary-btn {
+    background-color: #1b7dfc;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #0e69e3;
+}
+
+.secondary-btn {
+    background-color: #3e4c6e;
+}
+
+.rounds-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Sección inferior con logo */
+.bottom-section {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.bottom-logo {
+    display: flex;
+    flex-direction: column;
+    color: #59a5ff;
+}
+
+.gym-name {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.gym-discipline {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+/* Panel de configuración */
+.settings-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.settings-content {
+    background-color: #1e2a4a;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.form-label {
+    color: #59a5ff;
+}
+
+.form-control, .form-select {
+    background-color: #2e3b59;
+    border: 1px solid #3e4c6e;
+    color: white;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #2e3b59;
+    border-color: #59a5ff;
+    color: white;
+    box-shadow: 0 0 0 0.25rem rgba(89, 165, 255, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timer-display {
+        font-size: 5rem;
+    }
+    
+    .control-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .gym-name {
+        font-size: 1.5rem;
+    }
+    
+    .gym-discipline {
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 600px) {
+    .timer-display {
+        font-size: 6rem;
+    }
+    
+    .controls-section {
+        padding: 15px 0;
+    }
+    
+    .top-section, .bottom-section {
+        padding: 5px 0;
+    }
+} 
