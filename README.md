@@ -37,3 +37,6 @@ Simplemente abre el archivo `index.html` en tu navegador web preferido. No se re
 ## Compatibilidad
 
 La aplicación funciona en todos los navegadores modernos y es compatible con dispositivos móviles y de escritorio. 
+
+
+prueba de mdificacion 
